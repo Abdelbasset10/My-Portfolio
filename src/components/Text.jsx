@@ -6,7 +6,7 @@ const Text = ({title}) => {
   return (
     <motion.span
         variants={textContainer}
-        className='font-bold text-3xl'
+        className='font-bold text-lg sm:text-3xl'
         >
           {Array.from(title).map((letter, index ) => (
             <motion.span
