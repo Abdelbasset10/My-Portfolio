@@ -5,6 +5,7 @@ import Text from './Text'
 
 import { motion } from "framer-motion"
 import {staggerContainer, slideIn} from '../motion.js'
+import CV from '../assets/monCV.pdf'
 
 const Hero = () => {
   return (
@@ -21,7 +22,9 @@ const Hero = () => {
           <Text title="Rezazi Mohamed Abdelbasset" />
           <motion.p variants={slideIn('left','tween',0.2,1)}>Full Stack Devoloper</motion.p>
           <div className='flex  flex-col sm:flex-row gap-4 items-center justify-center mt-[2rem]' >
-            <button className=' border-[1px] w-[15rem] btn text-colorPrimary hover:bg-colorPrimary hover:text-colorWhite' >Download Cv</button>
+            <a href={CV} download>
+              <button className=' border-[1px] w-[15rem] btn text-colorPrimary hover:bg-colorPrimary hover:text-colorWhite'  >Download Cv</button>
+            </a>
             <a href="#contact">
               <button className='btn border-[1px] w-[15rem] hover:bg-[transparent] hover:text-colorPrimary bg-colorPrimary text-colorWhite' >Let's Talk</button>
             </a>
